@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg4"
+    tools:context=".Upload">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:text="UPLOAD BERITA"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello,"
+                android:textSize="17sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                />
+            <TextView
+                android:id="@+id/detailusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dyhan Ramadhan "
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LinearPlace"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:src="@drawable/placeicon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sidoarjo,Jawa Timur"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LinearPlace"
+                android:orientation="vertical"/>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:src="@drawable/schedulelogo"/>
+            <TextView
+                android:id="@+id/timetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                />
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" />
+    <EditText
+        android:id="@+id/edit_judul"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:hint="Judul Berita "
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittextstyle2" />
+
+    <EditText
+        android:id="@+id/edit_caption"
+        android:layout_width="375dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextstyle3"
+        android:layout_height="150dp"
+        android:textAlignment="center"
+        android:hint="Keterangan Caption Berita"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_choose_image"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextstyle4"
+        android:text="Upload Image"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_detele"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextstyle4"
+            android:text="Clear"
+            android:layout_marginRight="7.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.5dp"
+            android:background="@drawable/edittextstyle4"
+            android:text="Submit Berita"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
